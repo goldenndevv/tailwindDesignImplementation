@@ -1,9 +1,11 @@
 "use client";
 
-export default function App({
-  children,
-}: Readonly<{
+interface Props {
   children: React.ReactNode;
-}>) {
-  return <>{children}</>;
 }
+
+export const App: React.FC<Props> = ({ children }) => {
+  return <>{children}</>;
+};
+
+export default App;
