@@ -1,7 +1,9 @@
 "use client";
 
-const App = ({ children }: { children: React.ReactNode }) => {
+export default function App({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return <>{children}</>;
-};
-
-export default App;
+}
